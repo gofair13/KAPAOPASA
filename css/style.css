@@ -61,13 +61,22 @@ strong {
   background: #ffffff;
 }
 
-#about,
+#about{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 #feature,
 #courses,
-#contact,
+#contact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
 footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .section-title {
@@ -221,75 +230,66 @@ footer {
   width: 100vw;
   backface-visibility: hidden;
 }
+
 /* nav */
-.logo {
-  line-height: 20px;
-  position: fixed;
-  float: left;
-  margin: 16px 46px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-nav {
-  position: fixed;
-  width: 100%;
-  line-height: 60px;
+
+nav{
   z-index: 9;
+  background-color: transparent;
+  transition: 1s;
 }
 
-nav ul {
-  line-height: 20px;
+nav.no-bg{
+  z-index: 9;
+  background-color: #DC143C;
+  transition: 1s;
+}
+
+.navbar-brand {
+  padding: 15px !important;
+}
+.navbar-brand>img {
+  max-width: 80%;
+}
+.navbar a{
   list-style: none;
   background-color: transparent;
   overflow: hidden;
+  font-weight: 500;
+  font-size: 16px;
   color: #fff;
   padding: 0;
-  text-align: right;
   margin: 0;
-  padding-right: 40px;
-  transition: 1s;
 }
-nav.about ul {
-  line-height: 20px;
-  list-style: none;
-  background-color: #DC143C;
-  overflow: hidden;
-  color: #fff;
-  padding: 0;
-  text-align: right;
-  margin: 0;
-  padding-right: 40px;
-  transition: 1s;
-}
-
-nav.scrolldown ul {
-  background-color:#DC143C;
-}
-
 nav ul li {
   display: inline-block;
-  padding: 16px 40px;;
+  padding: 5px;
+}
+nav ul li a:hover:not(.active) {
+  color: #2d2d3f;
+  background: transparent;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
+navbar.navbar-toggle:hover,
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-collapse,
+.navbar-form {
+  border-color: #101010;
 }
 
-.menu-icon {
-  line-height: 60px;
-  width: 100%;
-  background: #000;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #fff;
-  display: none;
+nav.scrolldown  {
+  background-color:#DC143C;
 }
+@media (max-width: 767px){
+  nav{
+    z-index: 9;
+    background-color: #DC143C;
+    transition: 1s;
+  }
+}
+
 
 /* home section */
 #home {
@@ -379,24 +379,58 @@ border-color: transparent;
   border-color: transparent;
 }
 
+/*counter section css*/
+
+.counter{
+  background-color: #ffffff;
+  padding: 30px;
+  padding-bottom: 70px;
+}
+.counter_bg{
+  
+  background: url(../images/counterbg.jpg) no-repeat top center;
+  background-size: cover;
+}
+.counter .main_counter_area{}
+.counter .main_counter_area{
+  padding:80px 20px;
+  
+}
+.counter .main_counter_area .single_counter{}
+.counter .main_counter_area .single_counter .single_counter_item{
+
+}
+
+.counter .main_counter_area .single_counter h2{
+  color:#fff;
+  font-size:2.8125rem;
+}
+
+.counter .main_counter_area .single_counter p{
+  color:#fff;
+  font-size:1.5rem;
+}
+
+
+.video_overlay {
+  background-color: rgba(41, 39, 34, 0.75);
+  width: 100%;
+  height: auto;
+}
 
 /* feature section */
 #feature {
-  background: url('../images/feature-bg.jpg') no-repeat center center fixed;
+  background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 	color:#fff;
-  	background-color:#333;
+  	background-color:rgb(180, 180, 180);
   	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
 }
 
-#feature .icon {
-  color: #ffffff;
-  font-size: 42px;
-  padding-right: 14px;
-}
+
 
 #feature p {
   color: #333;
@@ -430,7 +464,8 @@ border-color: transparent;
   overflow: hidden;
   z-index: 8;
   bottom: 0;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid #e6e6e6;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -556,7 +591,10 @@ border-color: transparent;
 
 /* footer section  */
 footer {
-  background: #111112;
+  background: #9b001f;
+}
+footer p{
+  color: #f0f0f0;
 }
 
 footer .copyright-text {
@@ -577,7 +615,7 @@ footer a:hover {
   top: 0;
   left: 0; */
   position: relative;
-  bottom: 104px;
+  bottom: 50px;
 }
 .svgcolor-light > path {
   fill: white;
@@ -636,7 +674,6 @@ footer a:hover {
   border-radius: 0px;
   box-shadow: none;
   font-size: 20px;
-  color: #fff;
   margin-bottom: 20px;
   transition: all 0.4s ease-in-out;
 }
@@ -689,7 +726,7 @@ footer a:hover {
 
 .social-icon li a {
   border-radius: 100px;
-  color: #626262;
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
@@ -903,3 +940,15 @@ footer a:hover {
 #aboutus{
   background: white;
 }
+
+.form-horizontal{
+  padding-top: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
+  
+}
+
+.form-horizontal legend{
+  text-align: center
+}
+

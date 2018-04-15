@@ -13933,7 +13933,7 @@ var SurveyModel = /** @class */ (function (_super) {
         }
         if (name === "correctedanswers" || name === "correctedanswercount") {
             textValue.isExists = true;
-            textValue.value = this.getCorrectedAnswerCount();
+            textValue.value = this.getCorrectedAnswerCountP();
             return;
         }
         if (name === "incorrectedanswers" || name === "incorrectedanswercount") {
@@ -14262,6 +14262,21 @@ var SurveyModel = /** @class */ (function (_super) {
             if (options.result)
                 counter++;
         }
+        return counter;
+    };
+
+    SurveyModel.prototype.getCorrectedAnswerCountP = function () {
+        var questions = this.getQuizQuestions();
+        var counter = 0;
+        var options = { question: null, result: false };
+        for (var i = 0; i < questions.length; i++) {
+            options.question = questions[i];
+            options.result = options.question.isAnswerCorrect();
+            this.onIsAnswerCorrect.fire(this, options);
+            if (options.result)
+                counter++;
+        }
+        counter = counter / questions.length * 100 ;
         return counter;
     };
     /**
@@ -24822,7 +24837,7 @@ var defaultBootstrapCss = {
     },
     error: {
         root: "alert alert-danger",
-        icon: "glyphicon glyphicon-exclamation-sign",
+        icon: "",
         item: ""
     },
     boolean: { root: "sv_qbln form-inline checkbox", item: "", label: "" },

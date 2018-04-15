@@ -8,18 +8,7 @@ $(window).load(function(){
 
 $(document).ready(function() {
 
-  /* Home Slideshow Vegas
-  -----------------------------------------------*/
-  $(function() {
-    $('body').vegas({
-        slides: [
-            { src: 'images/slide-1.jpg' },
-            { src: 'images/slide-2.jpg' }
-        ],
-        timer: false,
-        transition: [ 'zoomOut', ]
-    });
-  });
+
 
 
    /* Back top
@@ -34,9 +23,11 @@ $(document).ready(function() {
         // Animate the scroll to top
       $('.go-top').click(function(event) {
         event.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 300);
+      $('html, body').animate({scrollTop: 100}, 300);
       })
-      
+
+   
+
 
   /* wow
   -------------------------------*/
@@ -44,13 +35,8 @@ $(document).ready(function() {
 
   });
 
-   // Menu-toggle button
 
-   $(document).ready(function () {
-    $(".menu-icon").on("click", function () {
-      $("nav ul").toggleClass("showing");
-    });
-  });
+
 
   // Scrolling Effect
 

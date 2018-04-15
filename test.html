@@ -22,48 +22,31 @@ http://www.templatemo.com/tm-490-comila
     <link rel="stylesheet" href="css/et-line-font.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/coursegrid.css">
     <link rel="stylesheet" href="css/test.css">
-     <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
-    <!-- preloader section -->
-    <section class="preloader">
-        <div class="sk-circle">
-            <div class="sk-circle1 sk-child"></div>
-            <div class="sk-circle2 sk-child"></div>
-            <div class="sk-circle3 sk-child"></div>
-            <div class="sk-circle4 sk-child"></div>
-            <div class="sk-circle5 sk-child"></div>
-            <div class="sk-circle6 sk-child"></div>
-            <div class="sk-circle7 sk-child"></div>
-            <div class="sk-circle8 sk-child"></div>
-            <div class="sk-circle9 sk-child"></div>
-            <div class="sk-circle10 sk-child"></div>
-            <div class="sk-circle11 sk-child"></div>
-            <div class="sk-circle12 sk-child"></div>
-        </div>
-    </section>
-
     <header>
-
-        <nav class="about">
-            <div class="wrapper">
-                <div class="menu-icon">
-                    <i class="fa fa-bars fa-2x"></i>
+        <nav class="navbar navbar-fixed-top no-bg">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/favicon-96x96.png" width="30" height="30" style="display: inline;"> KAPAOPASA</a>
                 </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
 
-                <div class="logo">
-                    LOGO
-                </div>
-
-                <div class="menu">
-                    <ul>
+                    <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -79,85 +62,132 @@ http://www.templatemo.com/tm-490-comila
                         <li>
                             <a href="#">Schorlarship</a>
                         </li>
+                        <li>
+                            <a href="sign_up.html">
+                                <span class="fa fa-user"></span> Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-sign-in"></span> Login</a>
+                        </li>
                     </ul>
                 </div>
+            </div>
         </nav>
-
     </header>
 
-    <!-- about section -->
-    <div class="jumbotron my-auto" style="margin-bottom: 0">
-        <div class="container" style="height: 100%">
-            <div id="surveyElement" style="min-height: 100%"></div>
+    <!-- test section-->
+    <div class="position-relative overflow-hidden p-1 p-md-3 m-md-3 bg-light" style="margin-top:100px">
+        <div id="surveyElement" class="container card animated fadeIn"></div>
+        <div id="resultElement" class="container" style="display: none">
+            <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#result_collapse" aria-expanded="false"
+                aria-controls="result_collapse">
+                Show Result
+            </button>
+            <div class="collapse my-3" id="result_collapse">
+                <div id="surveyResult" class="container"></div>
+            </div>
         </div>
     </div>
 
 
-
-    <!-- footer section -->
-    <footer>
+    <!-- recommend course -->
+    <div id="course" class="album py-5 bg-light" style="display:none">
         <div class="container">
+
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <h2>comila</h2>
-                    <div class="wow fadeInUp" data-wow-delay="0.3s">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus lacus nulla, eget varius
-                            justo tristique ut. Etiam a tellus magna.</p>
-                        <p class="copyright-text">Copyright &copy; 2016 Your Company
-                            <br> Designed by
-                            <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Templatemo</a>
-                        </p>
+                <div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+                    <div class="media wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="courses-item">
+                            <figure>
+                                <div class="overlay">
+                                    <i class="ti-plus"></i>
+                                </div>
+                                <img src="images/teacher.jpg" alt="Image" class="img-responsive">
+                            </figure>
+                            <div class="courses-text">
+                                <h2>Beginner
+                                    <br>
+                                    <span class="level">***แนะนำสำหรับผู้ที่ได้คะแนนต่ำกว่า 50%***</span>
+                                </h2>
+                                <h4> รายละเอียดคอร์ส</h4>
+                                <p>เริ่มต้นจากศูนย์ ทำความรู้จักสิ่งรอบตัวเป็นภาษาอังกฤษ เรียนรู้วิธีสร้างประโยคแบบง่ายๆ</p>
+                                <span>ราคา 14,400 ฿</span>
+                                <span style="margin-left:50%">(4 เดือน)</span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+                        <div class="media wow fadeInUp" data-wow-delay="0.4s">
+                            <a class="courses-item">
+                                <figure>
+                                    <div class="overlay">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                    <img src="images/teacher.jpg" alt="Image" class="img-responsive">
+                                </figure>
+                                <div class="courses-text">
+                                    <h2>Intermediate
+                                        <br>
+                                        <span class="level">***แนะนำสำหรับผู้ที่ได้คะแนนระหว่าง 50% ถึง 75%***</span>
+                                    </h2>
+                                    <h4> รายละเอียดคอร์ส</h4>
+                                    <p>เริ่มต้นจากศูนย์ ทำความรู้จักสิ่งรอบตัวเป็นภาษาอังกฤษ เรียนรู้วิธีสร้างประโยคแบบง่ายๆ</p>
+                                    <span>ราคา 14,400 ฿</span>
+                                    <span style="margin-left:50%">(4 เดือน)</span>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+                            <div class="media wow fadeInUp" data-wow-delay="0.4s">
+                                <a class="courses-item">
+                                    <figure>
+                                        <div class="overlay">
+                                            <i class="ti-plus"></i>
+                                        </div>
+                                        <img src="images/teacher.jpg" alt="Image" class="img-responsive">
+                                    </figure>
+                                    <div class="courses-text">
+                                        <h2>Advanced
+                                            <br>
+                                            <span class="level">***แนะนำสำหรับผู้ที่ได้คะแนนมากกว่า 75%***</span>
+                                        </h2>
+                                        <h4> รายละเอียดคอร์ส</h4>
+                                        <p>เริ่มต้นจากศูนย์ ทำความรู้จักสิ่งรอบตัวเป็นภาษาอังกฤษ เรียนรู้วิธีสร้างประโยคแบบง่ายๆ</p>
+                                        <span>ราคา 14,400 ฿</span>
+                                        <span style="margin-left:50%">(4 เดือน)</span>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-1 col-sm-1"></div>
 
-                <div class="col-md-4 col-sm-5">
-                    <h2>Our Studio</h2>
-                    <p class="wow fadeInUp" data-wow-delay="0.6s">
-                        120-240 aliquam augue libero,
-                        <br> Convallis in vulputate 10220
-                        <br> San Francisco, CA, USA
-                    </p>
-                    <ul class="social-icon">
-                        <li>
-                            <a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.9s"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="1.2s"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="1.4s"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="1.6s"></a>
-                        </li>
-                    </ul>
-                </div>
+               <!-- Back top -->
+               <a href="#back-top" class="go-top">
+                    <i class="fa fa-angle-up"></i>
+                </a>
 
-            </div>
-        </div>
-    </footer>
+                <!-- javscript js -->
+                <script src="js/jquery.js"></script>
+                <script src="js/bootstrap.min.js"></script>
 
+                <script src="js/vegas.min.js"></script>
 
+                <script src="js/wow.min.js"></script>
+                <script src="js/smoothscroll.js"></script>
+                <script src="js/custom.js"></script>
 
-    <!-- Back top -->
-    <a href="#back-top" class="go-top">
-        <i class="fa fa-angle-up"></i>
-    </a>
-
-    <!-- javscript js -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="js/vegas.min.js"></script>
-
-    <script src="js/wow.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script type="text/javascript" src="js/survey.jquery.js"></script>
-    <script type="text/javascript" src="js/test.js"></script>
+                <script type="text/javascript" src="js/survey.jquery.js"></script>
+                <script type="text/javascript" src="js/test.js"></script>
 
 </body>
 

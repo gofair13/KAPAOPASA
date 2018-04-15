@@ -24,9 +24,7 @@
 .sq-label {
     margin-left: 30px;
 }
-.sq-item:nth-child(1) {
-    margin-bottom: 5px;
-}
+
 
 .progress-bar {
     background-color: #DC143C;
