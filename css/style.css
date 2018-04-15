@@ -311,11 +311,16 @@ nav.scrolldown  {
 }
 
 #home h1 {
-  font-size: 7em
+  font-size: 4em;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
 }
 
 #home h3 {
-  font-size: 1.5em
+  font-size: 1.5em;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
 }
 
 #home .btn {
